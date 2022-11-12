@@ -6,16 +6,16 @@
 # publicAddress is optional and can be set to the ip players can directly connect through
 servers:
   lobby1:
-    address: 127.0.0.1:19133
-    public_address: play.myserver.com:19133 # WATERDOG_PORT
+    address: 127.0.0.1:{{WATERDOG_PORT}}
+    public_address: play.myserver.com:{{WATERDOG_PORT}} # WATERDOG_PORT
 listener:
   # The Motd which will be displayed in the server tab of a player and returned during ping
-  motd: §bWaterdog§3PE
+  motd: §l§bXelo§8-§fHost§r
   # The server priority list. If not changed by plugins, the proxy will connect the player to the first of those servers
   priorities:
   - lobby1
   # The address to bind the server to
-  host: 0.0.0.0:19132 # dont change this Port!6
+  host: 0.0.0.0:{{WATERDOG_PORT}} # dont change this Port!6
   # The maximum amount of players that can connect to this proxy instance
   max_players: 20
   # Map the ip a player joined through to a specific server
